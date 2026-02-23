@@ -33,19 +33,22 @@ class Colors:
 
 
 class Layers :
+    APLICACAO = 'APLICACAO'
     TRANSPORTE = 'TRANSPORTE'
     REDE = 'REDE'
     ENLACE = 'ENLACE'
     FISICA = 'FÍSICA'
 
 def colored_print(texto, cor=Colors.BRANCO, fundo=None, estilo=None, reset=True, layer=None):
+    texto_alterado = texto
+
     if layer:
-        texto = f'|{layer}| - {texto}'
+        texto_alterado = f'|{layer}| ---- {texto}'
 
     if fundo:
-        print(f"{estilo or ''}{cor}{fundo}{texto}", end='')
+        print(f"{estilo or ''}{cor}{fundo}{texto_alterado}", end='')
     else:
-        print(f"{estilo or ''}{cor}{texto}", end='')
+        print(f"{estilo or ''}{cor}{texto_alterado}", end='')
 
     if reset:
         print(Colors.RESET)
