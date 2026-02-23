@@ -40,4 +40,3 @@ Cliente conectado. Digite 'sair' para encerrar.
 - Sempre inicie o servidor primeiro antes do cliente
 - Use terminais separados para servidor e cliente
 - A pasta de library contém dependências tanto do server quanto do client. É de extrema importância sua integridade para que o projeto funcione
-- 
