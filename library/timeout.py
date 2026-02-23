@@ -7,9 +7,9 @@ def wait_response_with_timeout(clientSocket, timeout_time):
     try:
         clientSocket.settimeout(timeout_time)
 
-        response, addr = clientSocket.recvfrom(1024)
+        response, addr = clientSocket.recvfrom(2048)
 
-        return response.decode()
+        return response
     except socket.timeout:
         colored_print(f"Timeout de {timeout_time}s atingido!", Colors.VERMELHO)
         return None
