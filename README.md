@@ -1,4 +1,4 @@
-# Projeto de Protocolo de Transporte Confiável
+# Mini-Net
 
 ## Pré-requisitos
 
@@ -9,10 +9,9 @@
 
 ### 1. Inicie o servidor primeiro
 
-Abra um terminal e navegue até a pasta do servidor:
+Abra um terminal e navegue até a pasta do repositório:
 
-cd server
-python chat-server.py
+python -m server.chat-server
 
 Você verá a mensagem:
 The server is ready to receive
@@ -20,10 +19,9 @@ Aguardando pacotes na porta 12000...
 
 ### Inicie o cliente
 
-Abra outro terminal (mantenha o servidor rodando) e navegue até a pasta do cliente:
+Abra outro terminal (mantenha o servidor rodando) e navegue até a pasta do repositório:
 
-cd client
-python chat-client.py
+python -m client.chat-client
 
 Você verá:
 Cliente conectado. Digite 'sair' para encerrar.
